@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- AOS CSS for animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+
+
+        .nav-wrapper {
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+
+        body {
+            background-color: #000000;
+            overflow-x: hidden;
+            font-family: "Ysabeau SC", sans-serif;
+            font-size: 16px;
+        }
+
+        header {
+            background: linear-gradient(rgba(41,48,56, 1), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/pick2.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+            margin-top: -80px;
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 200px;
+            z-index: 111;
+        }
+
+        section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+    
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0px;
+         
+        }
+
+        .card {
+            margin: 1rem; 
+            opacity: 0; 
+            transform: translatex(-50px);
+            transition: opacity 0.5s ease, transform 1.5s ease;         
+            max-width: 300px;
+            box-shadow: 0 0 20px 10px rgba(18, 33, 33, 0.74);
+        }
+
+        .card.visible {
+            opacity: 0.8;
+            transform: translateY(0);
+        }
+
+        .card-image:hover {
+            transition: transform 0.3s ease; 
+            z-index: 111;
+        }
+
+        .card:hover {
+            transform: scale(1.15);
+            z-index: 111;
+            box-shadow: 0 0 0px 1px rgba(255, 210, 137, 0.9), 0 0 60px 30px rgba(117, 6, 6, 0.4);
+            opacity: 1;
+        }
+
+        .custom-header-text {
+            color: #e8ffbc;
+            font-size: 5em;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            margin-bottom: 0;
+            opacity: 0.1;
+        }
+
+        .custom-text {
+            color: #e1c056;
+            font-size: 2em;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
+
+        hr{
+         width: 80%;
+         margin: 20px auto;
+         border: none;
+         border-top: 3px solid rgba(253, 105, 6, 0.671);
+         box-shadow: 10px 5px 15px rgba(255, 115, 0, 0.5);
+         border-radius: 50%;
+         margin-bottom: 150px;
+         }
+
+
+/*TAHDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEETTT*/
+
+.stars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  z-index: 1;
+}
+span {
+  width: 12vmin;
+  height: 12vmin;
+  color: rgb(255, 63, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New";
+  font-size: 4vmin;
+  animation: blinking 6s ease-in-out infinite both;
+  will-change: opacity;
+}
+span:after {
+  display: block;
+  content: ".";
+  position: absolute;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/*KONTSSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+.content-box {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px; 
+    border-radius: 10px;
+    min-height: 500px;   
+}
+    .content-box1 {
+      display: none; 
+      background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url('./Rooma/COLOS.jpg');
+      padding: 20px;
+    }
+    
+.text-box {
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-left: 1px solid rgba(238, 178, 40, 0.342);
+    margin-top: 15%;
+
+}
+ /*RANKIIIIIIIIIIIIIIIIIIIIIIIIIIIIINGGG*/
+.table{
+    background-color: #ffaa009c;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ranking-table th {
+      background-color: #ffaa009c;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+ 
+    }
+    .ranking-table td {
+      text-align: left;
+      color: #ffffff;
+      background-color: #ff7b0030;
+
+    }
+    .ranking-table .rank {
+      font-weight: bold;
+    }
+
+    .modal-content {
+      max-height: 80vh; 
+      overflow-y: auto; 
+    }
+
+    .modal{
+        background: linear-gradient(rgba(41,48,56, 1), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/pick2.jpg);
+        overflow-y: hidden;
+    }
+/*HAHMOGALLERIAAAAAAAAAAAAA*/
+
+    .character-gallery {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .character-gallery img {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      filter: drop-shadow(0px 0px 10px rgba(255, 174, 0, 0.25));
+    }
+    .character-gallery img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.85));
+    }
+
+    .active {
+      display: block; 
+    }
+    .character-description img {
+      width: 100%;
+    }
+
+    .section {
+      padding: 0 15px;
+      margin-top: 50px;
+    }
+
+    .section p {
+      margin-top: 10px;
+    }
+
+
+    </style>
+
+    <title>NEWPROjECT</title>
+</head>
+<body>
+    <nav class="nav-wrapper transparent">
+        <div class="container">
+            <a href="#" class="brand-logo" style="color: #a81717;">NEWPROjECT</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home" style="font-size: large;">Home</a></li>
+                <li><a href="#about"style=" font-size: large;">About</a></li>
+                <li><a href="#game" style=" font-size: large;" >Game</a></li>
+                <li><a href="#ranks"style=" font-size: large;">Ranking</a></li>
+                <li><a href="#heroes" style=" font-size: large;" >Heroes</a></li>
+            </ul>
+            <ul class="sidenav red darken-5" id="mobile-menu">
+                <li><a href="#home" style="font-size: large;">Home</a></li>
+                <li><a href="#about"style=" font-size: large;">About</a></li>
+                <li><a href="#game" style=" font-size: large;" >Game</a></li>
+                <li><a href="#ranks"style=" font-size: large;">Ranking</a></li>
+                <li><a href="#heroes" style=" font-size: large;" >Heroes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!--OTSIKKO-->
+    <header>
+        <div class="stars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <div class="container">
+    
+            <div class="row">
+                
+                <div class="col s12 right-align">
+                    <h1 data-aos="fade-down" data-aos-duration="6000" class="custom-header-text center-align" style="margin-top:-110px; font-family: Jaro, sans-serif; letter-spacing: 4px; font-size: 9rem; text-shadow: 6px 13px 65px rgba(188, 0, 0, 0.9);">
+                        the Gladiator
+                    </h1><br>
+                    <h6 data-aos="fade-up" data-aos-duration="6000" class="custom-text" style="font-family: Playwrite MX, cursive; letter-spacing: 2px; font-size: 2.5rem; text-shadow: 2px 2px 14px rgba(248, 255, 148, 0.8); color: #a81717;">
+
+                  <h2 data-aos="fade-up" data-aos-duration="6000" class="custom-text" style="font-family: Playwrite MX, cursive; letter-spacing: 2px; font-size: 2rem; text-shadow: 2px 2px 24px rgba(248, 255,148, 0.9); color: #000000;">I'm the king of Bongo Bong</h2>
+                    </h6>
+                    
+                </div>
+                <div class="col s4 offset-s4 ">
+                  <p> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                  </p>
+                </div>
+        </div>
+        
+
+
+
+<!--KORTIT ETUSIVULLA-->
+        <div class="card-container">
+            <div class="container">
+                <div class="row">
+                    <!-- KORTTI 1-->
+                    <div class="col s12 m4 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Rooma/roma7.jpg">
+                            </div>
+                            <div class="card-action black white-text">
+                                <table>
+                                    <thead>
+                                      <tr>
+                                          <th>Alice</th>
+                                          
+                                          <th>Roughtough</th>
+                                      </tr>
+                                    </thead>
+                        
+                                  </table>
+                                  <p style="padding: 10px;">Lorem, ipsum dolor sit amet consectetur adi, tenetur!</p>
+                                <a href="#">Pick</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KORTTI 2 -->
+                    <div class="col s12 m4 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Rooma/roma2.png">
+                            </div>
+                            <div class="card-action black white-text">
+                                <table>
+                                    <thead>
+                                      <tr>
+                                          <th>Lore</th>
+                                          
+                                          <th>Thelore</th>
+                                      </tr>
+                                    </thead>
+                        
+                                  </table>
+                                  <p style="padding: 10px;">Lorem, ipsum dolor sit amet consectetur , tenetur!<br></p>
+                                <a href="#">PICK</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KORTTI 3-->
+                    <div class="col s12 m4 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Rooma/roma3.jpg">
+                            </div>
+                            <div class="card-action black white-text">
+                                <table>
+                                    <thead>
+                                      <tr>
+                                          <th>Mora</th>
+                                          
+                                          <th>Themortal</th>
+                                      </tr>
+                                    </thead>
+                        
+                                  </table>
+                                  <p style="padding: 10px;">Lorem, ipsum dolor sit amet consectetur adiptenetur!<br></p>
+                                <a href="#">PICK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+<!--WELCOMEEEEEEEEEEEEEEEE JA PATCHHHHHHHHHHHHHHHHHH-->
+    <section class="container section" id="about">
+        <div class="content-box" data-aos="fade-in" data-aos-duration="6000" style="margin-bottom: 15%; background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/epic-8937640_1920.jpg);">
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="./Rooma/lohis1.png" alt="" class="responsive-img" data-aos="fade-right" data-aos-duration="4000" style="filter: drop-shadow(0px 0px 10px rgba(161, 7, 7, 0.9)); margin-top: 130px;">
+                </div>
+                <div class="col s12 l8">
+                    <div class="text-box">
+                        <h2 class="yellow-text text-darken-3">Welcome</h2>
+                        <p class="white-text" data-aos="fade-left" data-aos-duration="4000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!<br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nam aliquam sit sed dolores est quibusdam minus aspernatur voluptatum ratione?</p>
+                    </div><hr style="width: 25%;">
+                    <div class="text-box">
+                        <h2 class="yellow-text text-darken-3" style="font-size: 2.5rem;">Patch Notes:</h2>
+                        <p class="white-text" data-aos="fade-left" data-aos-duration="4000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!</p>
+                    </div><hr style="width: 25%;">
+                </div>
+            </div>
+        </div>
+        <hr style="width: 50%;"><br><br><br><br>
+    
+        <div class="content-box" data-aos="fade-in" style="margin-bottom: 15%; background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/demon.png); background-size: cover;">
+            <div class="row">
+                <div class="col s12 l4 push-l8">
+                    <img src="./Rooma/roma1.jpg" alt="" class="responsive-img materialboxed" data-aos="fade-left" data-aos-duration="4000" style="border-radius: 10px; margin-top: 100px;">
+                </div>
+                <div class="col s12 l8 pull-l4">
+                    <div class="text-box" id="game">
+                        <h2 class="yellow-text text-darken-3">Play</h2>
+                        <p class="white-text" data-aos="fade-right" data-aos-duration="4000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!<br><br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis assumenda quo vero itaque reprehenderit veritatis ratione aspernatur consectetur? Neque aspernatur cupiditate fuga dolor aut voluptates mollitia sint exercitationem. Quaerat aut doloribus, dolore incidunt dolorum repudiandae illo nulla voluptatum assumenda animi repellat asperiores sequi nesciunt explicabo fugit, aperiam ipsa esse. Doloremque.
+                    
+                    <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officia, consequuntur quod facere suscipit officiis laudantium non maiores laborum expedita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 40%;">
+        
+        <div class="content-box" data-aos="fade-in" data-aos-duration="6000" style="margin-bottom: 15%; background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/roma6.jpg); background-repeat: no-repeat;">
+            <div class="container" id="ranks">
+              <div class="row">
+        
+                <!-- RAAAAAAAAAAAAAAAAAAAAAAAAAAANKSSSSS -->
+                <div class="col s12 m12 l12">
+                  <div class="text-box" style="border: none;">
+                    <h2 class="center-align yellow-text text-darken-3">Top Rank All <a class="waves-effect waves-light btn modal-trigger yellow black-text" href="#top100-modal">Show Top50</a></h2>
+                    <table class="highlight bordered striped ranking-table">
+                      <thead>
+                        <tr>
+                          <th class="rank">Rank</th>
+                          <th>Name</th>
+                          <th>Score</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="rank">1</td>
+                          <td>John Doe</td>
+                          <td>2500</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">2</td>
+                          <td>Jane Smith</td>
+                          <td>2300</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">3</td>
+                          <td>Chris Johnson</td>
+                          <td>2200</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">4</td>
+                          <td>Patricia Brown</td>
+                          <td>2100</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">5</td>
+                          <td>Michael White</td>
+                          <td>2000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+        
+                <div class="col s12 m12 l6">
+                  <div class="text-box" style="border: none;">
+                    <h2 class="center-align yellow-text text-darken-3">Top Rank 3v3</h2>
+                    <table class="highlight bordered striped ranking-table">
+                      <thead>
+                        <tr>
+                          <th class="rank">Rank</th>
+                          <th>Name</th>
+                          <th>Score</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="rank">1</td>
+                          <td>John Doe</td>
+                          <td>2500</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">2</td>
+                          <td>Jane Smith</td>
+                          <td>2300</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">3</td>
+                          <td>Chris Johnson</td>
+                          <td>2200</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">4</td>
+                          <td>Patricia Brown</td>
+                          <td>2100</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">5</td>
+                          <td>Michael White</td>
+                          <td>2000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                
+                <div class="col s12 m12 l6">
+                  <div class="text-box" style="border: none;">
+                    <h2 class="center-align yellow-text text-darken-3">Top 1v1</h2>
+                    <table class="highlight bordered striped ranking-table">
+                      <thead>
+                        <tr>
+                          <th class="rank">Rank</th>
+                          <th>Name</th>
+                          <th>Score</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="rank">1</td>
+                          <td>Scoo</td>
+                          <td>2500</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">2</td>
+                          <td>Jane Smith</td>
+                          <td>2300</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">3</td>
+                          <td>Chris Johnson</td>
+                          <td>2200</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">4</td>
+                          <td>Patricia Brown</td>
+                          <td>2100</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">5</td>
+                          <td>Michael White</td>
+                          <td>2000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+        
+          <!-- MODAAAAAAAAAAAAAAAAAAAAAALi-->
+
+          <div id="top100-modal" class="modal">
+            <div class="modal-content">
+              <h4>Top 100 Rankings</h4>
+              <table class="highlight bordered striped ranking-table">
+                <thead>
+                  <tr>
+                    <th class="rank">Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+             
+                  <tr>
+                    <td class="rank">1</td>
+                    <td>John Doe</td>
+                    <td>2500</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">2</td>
+                    <td>Jane Smith</td>
+                    <td>2300</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">3</td>
+                    <td>Chris Johnson</td>
+                    <td>2200</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">4</td>
+                    <td>Patricia Brown</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">5</td>
+                    <td>Michael White</td>
+                    <td>2000</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">1</td>
+                    <td>John Doe</td>
+                    <td>2500</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">2</td>
+                    <td>Jane Smith</td>
+                    <td>2300</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">3</td>
+                    <td>Chris Johnson</td>
+                    <td>2200</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">4</td>
+                    <td>Patricia Brown</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">5</td>
+                    <td>Michael White</td>
+                    <td>2000</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">1</td>
+                    <td>John Doe</td>
+                    <td>2500</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">2</td>
+                    <td>Jane Smith</td>
+                    <td>2300</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">3</td>
+                    <td>Chris Johnson</td>
+                    <td>2200</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">4</td>
+                    <td>Patricia Brown</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">5</td>
+                    <td>Michael White</td>
+                    <td>2000</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">1</td>
+                    <td>John Doe</td>
+                    <td>2500</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">2</td>
+                    <td>Jane Smith</td>
+                    <td>2300</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">3</td>
+                    <td>Chris Johnson</td>
+                    <td>2200</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">4</td>
+                    <td>Patricia Brown</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td class="rank">5</td>
+                    <td>Michael White</td>
+                    <td>2000</td>
+                  </tr>
+               
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+        <hr style="width: 40%;">
+    
+<!-----HAHMOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT-->
+
+
+    
+<h2 class="center-align yellow-text text-darken-3" id="heroes">Pick the Gladiator</h2><br><br>
+            
+<!-- HAHMOJEN KUVAGALLERYYY -->
+<div class="character-gallery">
+  <img src="./Rooma/hahmo1.png" alt="Character 1" onclick="showContent('content1');" class="responsive-img" style="width: 100px;">
+  <img src="./Rooma/hahmo.png" alt="Character 2" onclick="showContent('content2');" class="responsive-img" style="width: 100px;">
+  <img src="./Rooma/avatar.png" alt="Character 3" onclick="showContent('content3');" class="responsive-img" style="width: 100px; border-radius: 50%;">
+</div>
+
+<!-- HAHMOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT -->
+<div id="content1" class="content-box1 active">
+  <div class="row">
+    <div class="col s12 l9">
+      <img src="./Rooma/hahmo1.png" alt="Character 1" class="responsive-img" style="filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.45)); margin-top: 130px;">
+    </div>
+    <div class="col s12 l3">
+      <div class="text-box">
+        <h2 class="yellow-text text-darken-3">Slicer</h2>
+        <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!</p>
+      </div>
+      <hr style="width: 25%;">
+      <div class="text-box" >
+        <h2 class="center-align yellow-text text-darken-3">Stats:</h2>
+        <table class="highlight bordered striped stats-table white-text" style="background-color: #d19d2c61;">
+          <thead>
+            <tr>
+              <th>Stat</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strength</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Agility</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td>Intelligence</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Power</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Endurance</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Dexterity</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Charisma</td>
+              <td>60</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr style="width: 25%;">
+    </div>
+  </div>
+</div>
+
+<div id="content2" class="content-box1">
+  <div class="row">
+    <div class="col s12 l9">
+      <img src="./Rooma/hahmo.png" alt="Character 2" class="responsive-img" style="filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.45));  margin-top: 130px;">
+    </div>
+    <div class="col s12 l3">
+      <div class="text-box">
+        <h2 class="yellow-text text-darken-3">Warrior</h2>
+        <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!</p>
+      </div>
+      <hr style="width: 25%;">
+      <div class="text-box" >
+        <h2 class="center-align yellow-text text-darken-3">Stats:</h2>
+        <table class="highlight bordered striped stats-table white-text" style="background-color: #d19d2c61;">
+          <thead>
+            <tr>
+              <th>Stat</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strength</td>
+              <td>95</td>
+            </tr>
+            <tr>
+              <td>Agility</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Intelligence</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Power</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Endurance</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Dexterity</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>Charisma</td>
+              <td>50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr style="width: 25%;">
+    </div>
+  </div>
+</div>
+
+<div id="content3" class="content-box1">
+  <div class="row">
+    <div class="col s12 l9">
+      <img src="./Rooma/BARBAR.png" alt="Character 3" class="responsive-img" style="filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.45)); margin-top: 130px;">
+    </div>
+    <div class="col s12 l3">
+      <div class="text-box">
+        <h2 class="yellow-text text-darken-3">Mage</h2>
+        <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!</p>
+      </div>
+      <hr style="width: 25%;">
+      <div class="text-box" >
+        <h2 class="center-align yellow-text text-darken-3">Stats:</h2>
+        <table class="highlight bordered striped stats-table white-text" style="background-color: #d19d2c61;">
+          <thead>
+            <tr>
+              <th>Stat</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strength</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>Agility</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Intelligence</td>
+              <td>95</td>
+            </tr>
+            <tr>
+              <td>Power</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td>Endurance</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Dexterity</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Charisma</td>
+              <td>80</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr style="width: 25%;">
+    </div>
+  </div>
+</div>
+        <hr style="width: 30%;">
+    </section>
+    
+    
+
+    <div class="parallax-container" style="background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0, 0.01), rgb(0, 0, 0))">
+        <div class="parallax"><img src="./Rooma/Gladiator.jpg" alt="">
+            
+            <div class="stars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div></div>
+    </div>
+
+    <section class="container section">
+        <div class="row white-text">
+          <div class="col s12 m4 center-align">
+            <img src="./Rooma/roma6.jpg" alt="Image description 1" style="border-radius: 50%; width: 200px;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad unde illo nisi nesciunt repudiandae! Id ab saepe commodi et?</p>
+          </div>
+    
+          <div class="col s12 m4 center-align">
+            <img src="./Rooma/demon.png" alt="Image description 2" style="border-radius: 50%; width: 200px;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad unde illo nisi nesciunt repudiandae! Id ab saepe commodi et?</p>
+          </div>
+    
+          <div class="col s12 m4 center-align">
+            <img src="./Rooma/roma9.jpg" alt="Image description 3" style="border-radius: 50%; width: 200px;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad unde illo nisi nesciunt repudiandae! Id ab saepe commodi et?</p>
+          </div>
+        </div>
+      </section>
+    
+
+    <div class="parallax-container" style="background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0, 0.1), rgb(0, 0, 0))">
+        <div class="parallax"><img src="./Rooma/Gladiator.jpg" alt="" style="filter: blur();">
+            
+            
+            <div class="stars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+    
+                </div>
+            </div>
+    </div>
+
+    <div class="container" style= "width: 200px; text-align: center;" >
+        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quidem, excepturi ut beatae eum saepe sapiente possimus ullam non cum.</p>
+    </div>
+
+    <!-- Materialize JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        });
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 2500,
+  });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, index * 370); 
+        });
+    });
+
+//OTSIKKKKOO////////
+
+let text = "'Cause I'm the king of Bongo, baby";
+let index = 1; 
+
+
+const typeWriter = setInterval(() => {
+    const element = document.querySelector("h6");
+
+    
+    element.textContent = text[0] + text.slice(1, index);
+
+    index += 1;
+
+    if (index > text.length) {
+        index = 1;  
+    }
+
+}, 200);
+
+
+// STARScodepen//////////////////////
+
+var stars = document.querySelectorAll("span")
+
+var i = stars.length;
+
+while (i--) {
+
+  var delay = (Math.random() * (-2 - 0) + 0).toFixed(1)
+  delay *= Math.floor(Math.random() * 2) == 1 ? 1 : -1
+  
+  // Randomize duration
+  var duration = (Math.random() * (2 - 4) + 4).toFixed(1)
+
+  // Randomize scale
+  var scale = (Math.random() * (0.2 - 1) + 1).toFixed(1)
+
+  // Randomize coordinates
+  var x = (Math.random() * (0 - 30) + 60).toFixed(1)
+  x *= Math.floor(Math.random() * 2) == 1 ? 1 : -1
+  var y = (Math.random() * (0 - 30) + 60).toFixed(1)
+  y *= Math.floor(Math.random() * 2) == 1 ? 1 : -1
+
+  // Set styles
+  stars[i].style.animationDelay = delay + "s"
+  stars[i].style.animationDuration = duration + "s"
+  stars[i].style.transform = 'scale(' + scale + ') translate(' + x + '% ,' + y + '%)'
+}
+
+/////////////STATS///////////////
+document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      M.Modal.init(elems, {});
+    });
+
+///////////////////////HEROEEEEEEEEEEEES/////////////////////
+    function showContent(contentId) {
+   
+      var contents = document.querySelectorAll('.content-box1');
+      contents.forEach(function(content) {
+        content.classList.remove('active');
+      });
+
+
+      var selectedContent = document.getElementById(contentId);
+      selectedContent.classList.add('active');
+    }
+
+    </script>
+
+    
+</body>
+</html>
