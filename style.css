@@ -1,0 +1,297 @@
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 16px;
+}
+
+.custom-button {
+    font-family: "Ysabeau SC", sans-serif;
+    font-size: 20px;       
+    padding: 15px 30px;    
+    background-color: red;
+    color: #e1c056;
+    height: auto;
+    font-weight: 600;
+    margin: 50px;
+    box-shadow: 0 0 20px 10px rgba(18, 33, 33, 0.74);
+  }
+
+  .custom-button:hover{
+    background-color: #e1c056;
+    color: #000000;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.74);
+  }
+
+.nav-wrapper {
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+header {
+    background: linear-gradient(rgba(41,48,56, 1), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/GLADIATOR3.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    margin-top: -80px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 200px;
+    z-index: 111;
+}
+
+section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+ 
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px 10px rgba(18, 33, 33, 0.74);
+}
+
+.card.visible {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+
+.card-image:hover {
+    transition: transform 0.3s ease; 
+    z-index: 111;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    z-index: 111;
+    box-shadow: 0 0 0px 1px rgba(255, 210, 137, 0.9), 0 0 60px 30px rgba(117, 6, 6, 0.4);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-right: 0; 
+        margin-bottom: 20px;
+    }
+}
+/*HEADEEEEEEEEEEEEER*/
+.custom-header-text {
+    color: #e8ffbc;
+    font-size: 5em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+    opacity: 0.1;
+}
+
+.custom-text {
+    color: #e1c056;
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+
+.custom-header-text {
+    margin-top: -110px;
+    font-family: Jaro, sans-serif;
+    letter-spacing: 4px;
+    font-size: 9rem;
+    text-shadow: 6px 13px 65px rgba(188, 0, 0, 0.9);
+}
+
+.custom-text {
+    font-family: Playwrite MX, cursive;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 14px rgba(248, 255, 148, 0.8);
+}
+
+.custom-text-h6 {
+    font-size: 2.5rem;
+    color: #a81717;
+}
+
+.custom-text-h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 24px rgba(248, 255, 148, 0.9);
+}
+
+@media (max-width: 768px) {
+    .custom-header-text {
+        font-size: 6rem; 
+        margin-top: -60px; 
+    }
+    
+    .custom-text-h6 {
+        font-size: 1.8rem; 
+    }
+    
+    .custom-text-h2 {
+        font-size: 1.5rem; 
+    }
+}
+
+hr{
+ width: 80%;
+ margin: 20px auto;
+ border: none;
+ border-top: 3px solid rgba(253, 105, 6, 0.671);
+ box-shadow: 10px 5px 15px rgba(255, 115, 0, 0.5);
+ border-radius: 50%;
+ margin-bottom: 150px;
+ }
+
+
+/*TAHDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEETTT*/
+
+.stars {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+overflow: hidden;
+z-index: 1;
+}
+span {
+width: 12vmin;
+height: 12vmin;
+color: rgb(255, 63, 63);
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Courier New";
+font-size: 9vmin;
+animation: blinking 6s ease-in-out infinite both;
+will-change: opacity;
+}
+span:after {
+display: block;
+content: ".";
+position: absolute;
+}
+
+@keyframes blinking {
+0% {
+opacity: 1;
+}
+
+50% {
+opacity: 0.2;
+}
+
+100% {
+opacity: 1;
+}
+}
+/*KONTSSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+.content-box {
+
+background-repeat: no-repeat;
+background-size: cover;
+padding: 20px; 
+border-radius: 10px;
+min-height: 500px;   
+}
+.content-box1 {
+display: none; 
+background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url('./Rooma/COLOS.jpg');
+padding: 20px;
+}
+
+.text-box {
+background-color: rgba(0, 0, 0, 0.2); 
+padding: 20px; 
+border-radius: 8px; 
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+border-left: 1px solid rgba(238, 178, 40, 0.542);
+margin-top: 15%;
+
+}
+
+.box1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(117, 6, 6, 0.5);
+    color: #e8ffbc;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px double rgba(255, 191, 28, 0.4);
+    margin: 20px auto;
+}
+/*RANKIIIIIIIIIIIIIIIIIIIIIIIIIIIIINGGG*/
+.table{
+background-color: #ffaa009c;
+color: #ffffff;
+border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ranking-table th {
+background-color: #ffaa009c;
+color: #ffffff;
+border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.ranking-table td {
+text-align: left;
+color: #ffffff;
+background-color: #ff7b0030;
+
+}
+.ranking-table .rank {
+font-weight: bold;
+}
+
+.modal-content {
+max-height: 80vh; 
+overflow-y: auto; 
+}
+
+.modal{
+background: linear-gradient(rgba(41,48,56, 1), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/pick2.jpg);
+overflow-y: hidden;
+}
+/*HAHMOGALLERIAAAAAAAAAAAAA*/
+
+.character-gallery {
+display: flex;
+justify-content: space-around;
+margin: 20px 0;
+}
+.character-gallery img {
+cursor: pointer;
+transition: transform 0.3s ease;
+filter: drop-shadow(0px 0px 10px rgba(255, 174, 0, 0.25));
+}
+.character-gallery img:hover {
+transform: scale(1.05);
+filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.85));
+}
+
+.active {
+display: block; 
+}
+.character-description img {
+width: 100%;
+}
+
+.section {
+padding: 0 15px;
+margin-top: 50px;
+}
+
+.section p {
+margin-top: 10px;
+}
+
+

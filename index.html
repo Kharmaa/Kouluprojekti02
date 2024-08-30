@@ -18,236 +18,12 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- AOS CSS for animations -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
 
-        .nav-wrapper {
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-        }
-
-        body {
-            background-color: #000000;
-            overflow-x: hidden;
-            font-family: "Ysabeau SC", sans-serif;
-            font-size: 16px;
-        }
-
-        header {
-            background: linear-gradient(rgba(41,48,56, 1), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/pick2.jpg);
-            background-size: cover;
-            background-position: center;
-            min-height: 1000px;
-            margin-top: -80px;
-            position: relative;
-            text-align: center;
-            padding: 20px;
-            margin-bottom: 200px;
-            z-index: 111;
-        }
-
-        section {
-            padding-top: 4vw;
-            padding-bottom: 4vw;
-    
-        }
-
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 0px;
-         
-        }
-
-        .card {
-            margin: 1rem; 
-            opacity: 0; 
-            transform: translatex(-50px);
-            transition: opacity 0.5s ease, transform 1.5s ease;         
-            max-width: 300px;
-            box-shadow: 0 0 20px 10px rgba(18, 33, 33, 0.74);
-        }
-
-        .card.visible {
-            opacity: 0.8;
-            transform: translateY(0);
-        }
-
-        .card-image:hover {
-            transition: transform 0.3s ease; 
-            z-index: 111;
-        }
-
-        .card:hover {
-            transform: scale(1.15);
-            z-index: 111;
-            box-shadow: 0 0 0px 1px rgba(255, 210, 137, 0.9), 0 0 60px 30px rgba(117, 6, 6, 0.4);
-            opacity: 1;
-        }
-
-        .custom-header-text {
-            color: #e8ffbc;
-            font-size: 5em;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
-            margin-bottom: 0;
-            opacity: 0.1;
-        }
-
-        .custom-text {
-            color: #e1c056;
-            font-size: 2em;
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
-        }
+    <link rel="stylesheet" href="style.css">
 
 
-        hr{
-         width: 80%;
-         margin: 20px auto;
-         border: none;
-         border-top: 3px solid rgba(253, 105, 6, 0.671);
-         box-shadow: 10px 5px 15px rgba(255, 115, 0, 0.5);
-         border-radius: 50%;
-         margin-bottom: 150px;
-         }
-
-
-/*TAHDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEETTT*/
-
-.stars {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  z-index: 1;
-}
-span {
-  width: 12vmin;
-  height: 12vmin;
-  color: rgb(255, 63, 63);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Courier New";
-  font-size: 4vmin;
-  animation: blinking 6s ease-in-out infinite both;
-  will-change: opacity;
-}
-span:after {
-  display: block;
-  content: ".";
-  position: absolute;
-}
-
-@keyframes blinking {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.2;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-/*KONTSSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
-.content-box {
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px; 
-    border-radius: 10px;
-    min-height: 500px;   
-}
-    .content-box1 {
-      display: none; 
-      background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url('./Rooma/COLOS.jpg');
-      padding: 20px;
-    }
-    
-.text-box {
-    background-color: rgba(0, 0, 0, 0.2); 
-    padding: 20px; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    border-left: 1px solid rgba(238, 178, 40, 0.342);
-    margin-top: 15%;
-
-}
- /*RANKIIIIIIIIIIIIIIIIIIIIIIIIIIIIINGGG*/
-.table{
-    background-color: #ffaa009c;
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.ranking-table th {
-      background-color: #ffaa009c;
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.5);
- 
-    }
-    .ranking-table td {
-      text-align: left;
-      color: #ffffff;
-      background-color: #ff7b0030;
-
-    }
-    .ranking-table .rank {
-      font-weight: bold;
-    }
-
-    .modal-content {
-      max-height: 80vh; 
-      overflow-y: auto; 
-    }
-
-    .modal{
-        background: linear-gradient(rgba(41,48,56, 1), rgba(0,0,0, 0.4), rgb(0, 0, 0)), url(./Rooma/pick2.jpg);
-        overflow-y: hidden;
-    }
-/*HAHMOGALLERIAAAAAAAAAAAAA*/
-
-    .character-gallery {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-    .character-gallery img {
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      filter: drop-shadow(0px 0px 10px rgba(255, 174, 0, 0.25));
-    }
-    .character-gallery img:hover {
-      transform: scale(1.05);
-      filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.85));
-    }
-
-    .active {
-      display: block; 
-    }
-    .character-description img {
-      width: 100%;
-    }
-
-    .section {
-      padding: 0 15px;
-      margin-top: 50px;
-    }
-
-    .section p {
-      margin-top: 10px;
-    }
-
-
-    </style>
 
     <title>NEWPROjECT</title>
 </head>
@@ -308,33 +84,27 @@ span:after {
             <span></span>
 
         </div>
-
-        <div class="container">
-    
-            <div class="row">
-                
-                <div class="col s12 right-align">
-                    <h1 data-aos="fade-down" data-aos-duration="6000" class="custom-header-text center-align" style="margin-top:-110px; font-family: Jaro, sans-serif; letter-spacing: 4px; font-size: 9rem; text-shadow: 6px 13px 65px rgba(188, 0, 0, 0.9);">
-                        the Gladiator
-                    </h1><br>
-                    <h6 data-aos="fade-up" data-aos-duration="6000" class="custom-text" style="font-family: Playwrite MX, cursive; letter-spacing: 2px; font-size: 2.5rem; text-shadow: 2px 2px 14px rgba(248, 255, 148, 0.8); color: #a81717;">
-
-                  <h2 data-aos="fade-up" data-aos-duration="6000" class="custom-text" style="font-family: Playwrite MX, cursive; letter-spacing: 2px; font-size: 2rem; text-shadow: 2px 2px 24px rgba(248, 255,148, 0.9); color: #000000;">I'm the king of Bongo Bong</h2>
-                    </h6>
-                    
-                </div>
-                <div class="col s4 offset-s4 ">
-                  <p> 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-                  </p>
-                </div>
-        </div>
         
+        <div class="container">
+          <div class="row">
+              <div class="col s12 right-align">
+                  <h1 data-aos="fade-down" data-aos-duration="4000" class="custom-header-text center-align">
+                      the Gladiator
+                  </h1>
+                  <br>
+                  <h6 data-aos="fade-up" data-aos-duration="4000" class="custom-text custom-text-h6"></h6>
+                  <h2 data-aos="fade-up" data-aos-duration="2000" class="custom-text custom-text-h2">
+                      I'm the king of Bongo Bong
+                  </h2>
+              </div>
+              <div class="row">
+                  <div class="col s12 center-align">
+                      <a class="waves-effect waves-light btn custom-button" href="#!">PLAY</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
 
 
 
@@ -343,7 +113,7 @@ span:after {
             <div class="container">
                 <div class="row">
                     <!-- KORTTI 1-->
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m12 l4">
                         <div class="card">
                             <div class="card-image">
                                 <img src="./Rooma/roma7.jpg">
@@ -352,21 +122,21 @@ span:after {
                                 <table>
                                     <thead>
                                       <tr>
-                                          <th>Alice</th>
+                                          <th><u>Alice</u></th>
                                           
                                           <th>Roughtough</th>
                                       </tr>
                                     </thead>
                         
                                   </table>
-                                  <p style="padding: 10px;">Lorem, ipsum dolor sit amet consectetur adi, tenetur!</p>
+                                  <p style="padding: 10px;">Fight for your Life!</p>
                                 <a href="#">Pick</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- KORTTI 2 -->
-                    <div class="col s12 m4 l4">
+                    <div class="col s12 m12 l4">
                         <div class="card">
                             <div class="card-image">
                                 <img src="./Rooma/roma2.png">
@@ -382,14 +152,14 @@ span:after {
                                     </thead>
                         
                                   </table>
-                                  <p style="padding: 10px;">Lorem, ipsum dolor sit amet consectetur , tenetur!<br></p>
+                                  <p style="padding: 10px;">Everything going so deep<br></p>
                                 <a href="#">PICK</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- KORTTI 3-->
-                    <div class="col s12 m4 l4">
+                <!-- KORTTI 3-->
+                    <div class="col s12 m12 l4">
                         <div class="card">
                             <div class="card-image">
                                 <img src="./Rooma/roma3.jpg">
@@ -405,7 +175,7 @@ span:after {
                                     </thead>
                         
                                   </table>
-                                  <p style="padding: 10px;">Lorem, ipsum dolor sit amet consectetur adiptenetur!<br></p>
+                                  <p style="padding: 10px;">Slice and slice more<br></p>
                                 <a href="#">PICK</a>
                             </div>
                         </div>
@@ -430,11 +200,23 @@ span:after {
                         <h2 class="yellow-text text-darken-3">Welcome</h2>
                         <p class="white-text" data-aos="fade-left" data-aos-duration="4000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!<br><br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nam aliquam sit sed dolores est quibusdam minus aspernatur voluptatum ratione?</p>
-                    </div><hr style="width: 25%;">
+                    
+                    
+                
+                    
+                    
+                      </div><hr style="width: 25%;">
                     <div class="text-box">
                         <h2 class="yellow-text text-darken-3" style="font-size: 2.5rem;">Patch Notes:</h2>
                         <p class="white-text" data-aos="fade-left" data-aos-duration="4000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda modi aspernatur, deleniti animi voluptas reiciendis necessitatibus ducimus aliquam tempore asperiores!</p>
-                    </div><hr style="width: 25%;">
+                    
+                        <div class="box1">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis esse quidem laboriosam magni dolor, quisquam dolores non deserunt officiis quis quam repudiandae maxime voluptates error alias quae repellendus officia laudantium!</p>
+                    </div>
+                    <div class="box1">
+                      <p> quam repudiandae maxime voluptates error alias quae repellendus officia laudantium!</p>
+                    </div>
+                      </div><hr style="width: 25%;">
                 </div>
             </div>
         </div>
@@ -479,27 +261,27 @@ span:after {
                       <tbody>
                         <tr>
                           <td class="rank">1</td>
-                          <td>John Doe</td>
+                          <td>Winnerwinner</td>
                           <td>2500</td>
                         </tr>
                         <tr>
                           <td class="rank">2</td>
-                          <td>Jane Smith</td>
+                          <td>AlwaysSecond</td>
                           <td>2300</td>
                         </tr>
                         <tr>
                           <td class="rank">3</td>
-                          <td>Chris Johnson</td>
+                          <td>Whatever999</td>
                           <td>2200</td>
                         </tr>
                         <tr>
                           <td class="rank">4</td>
-                          <td>Patricia Brown</td>
+                          <td>KillerQueen</td>
                           <td>2100</td>
                         </tr>
                         <tr>
                           <td class="rank">5</td>
-                          <td>Michael White</td>
+                          <td>MichaelBoo</td>
                           <td>2000</td>
                         </tr>
                       </tbody>
@@ -521,27 +303,27 @@ span:after {
                       <tbody>
                         <tr>
                           <td class="rank">1</td>
-                          <td>John Doe</td>
+                          <td>Butters</td>
                           <td>2500</td>
                         </tr>
                         <tr>
                           <td class="rank">2</td>
-                          <td>Jane Smith</td>
+                          <td>NotSoWhat</td>
                           <td>2300</td>
                         </tr>
                         <tr>
                           <td class="rank">3</td>
-                          <td>Chris Johnson</td>
+                          <td>Killeeeer</td>
                           <td>2200</td>
                         </tr>
                         <tr>
                           <td class="rank">4</td>
-                          <td>Patricia Brown</td>
+                          <td>KillerQueen</td>
                           <td>2100</td>
                         </tr>
                         <tr>
                           <td class="rank">5</td>
-                          <td>Michael White</td>
+                          <td>MichaelBoo</td>
                           <td>2000</td>
                         </tr>
                       </tbody>
@@ -563,27 +345,27 @@ span:after {
                       <tbody>
                         <tr>
                           <td class="rank">1</td>
-                          <td>Scoo</td>
+                          <td>Butters</td>
                           <td>2500</td>
                         </tr>
                         <tr>
                           <td class="rank">2</td>
-                          <td>Jane Smith</td>
+                          <td>NotSoWhat</td>
                           <td>2300</td>
                         </tr>
                         <tr>
                           <td class="rank">3</td>
-                          <td>Chris Johnson</td>
+                          <td>Killeeeer</td>
                           <td>2200</td>
                         </tr>
                         <tr>
                           <td class="rank">4</td>
-                          <td>Patricia Brown</td>
+                          <td>KillerQueen</td>
                           <td>2100</td>
                         </tr>
                         <tr>
                           <td class="rank">5</td>
-                          <td>Michael White</td>
+                          <td>MichaelBoo</td>
                           <td>2000</td>
                         </tr>
                       </tbody>
@@ -613,107 +395,107 @@ span:after {
              
                   <tr>
                     <td class="rank">1</td>
-                    <td>John Doe</td>
+                    <td>Winnerwinner</td>
                     <td>2500</td>
                   </tr>
                   <tr>
                     <td class="rank">2</td>
-                    <td>Jane Smith</td>
+                    <td>AlwaysSecond</td>
                     <td>2300</td>
                   </tr>
                   <tr>
                     <td class="rank">3</td>
-                    <td>Chris Johnson</td>
+                    <td>Whatever999</td>
                     <td>2200</td>
                   </tr>
                   <tr>
                     <td class="rank">4</td>
-                    <td>Patricia Brown</td>
+                    <td>KillerQueen</td>
                     <td>2100</td>
                   </tr>
                   <tr>
                     <td class="rank">5</td>
-                    <td>Michael White</td>
+                    <td>MichaelBoo</td>
                     <td>2000</td>
                   </tr>
                   <tr>
                     <td class="rank">1</td>
-                    <td>John Doe</td>
+                    <td>Winnerwinner</td>
                     <td>2500</td>
                   </tr>
                   <tr>
                     <td class="rank">2</td>
-                    <td>Jane Smith</td>
+                    <td>AlwaysSecond</td>
                     <td>2300</td>
                   </tr>
                   <tr>
                     <td class="rank">3</td>
-                    <td>Chris Johnson</td>
+                    <td>Whatever999</td>
                     <td>2200</td>
                   </tr>
                   <tr>
                     <td class="rank">4</td>
-                    <td>Patricia Brown</td>
+                    <td>KillerQueen</td>
                     <td>2100</td>
                   </tr>
                   <tr>
                     <td class="rank">5</td>
-                    <td>Michael White</td>
+                    <td>MichaelBoo</td>
                     <td>2000</td>
                   </tr>
                   <tr>
                     <td class="rank">1</td>
-                    <td>John Doe</td>
+                    <td>Johbo</td>
                     <td>2500</td>
                   </tr>
                   <tr>
                     <td class="rank">2</td>
-                    <td>Jane Smith</td>
+                    <td>JaneEEs</td>
                     <td>2300</td>
                   </tr>
                   <tr>
                     <td class="rank">3</td>
-                    <td>Chris Johnson</td>
+                    <td>ChriTR</td>
                     <td>2200</td>
                   </tr>
                   <tr>
                     <td class="rank">4</td>
-                    <td>Patricia Brown</td>
+                    <td>DOWNEEEER</td>
                     <td>2100</td>
                   </tr>
                   <tr>
                     <td class="rank">5</td>
-                    <td>Michael White</td>
+                    <td>420everything</td>
                     <td>2000</td>
                   </tr>
                   <tr>
                     <td class="rank">1</td>
-                    <td>John Doe</td>
+                    <td>Jeeah111</td>
                     <td>2500</td>
                   </tr>
                   <tr>
                     <td class="rank">2</td>
-                    <td>Jane Smith</td>
+                    <td>Woow</td>
                     <td>2300</td>
                   </tr>
                   <tr>
                     <td class="rank">3</td>
-                    <td>Chris Johnson</td>
+                    <td>CBB30987_</td>
                     <td>2200</td>
                   </tr>
                   <tr>
                     <td class="rank">4</td>
-                    <td>Patricia Brown</td>
+                    <td>PAnonymous</td>
                     <td>2100</td>
                   </tr>
                   <tr>
                     <td class="rank">5</td>
-                    <td>Michael White</td>
+                    <td>Micheee</td>
                     <td>2000</td>
                   </tr>
-               
+
                 </tbody>
-              </table>
+              </table><br><br>
             </div>
             <div class="modal-footer">
               <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
@@ -953,7 +735,7 @@ span:after {
     <section class="container section">
         <div class="row white-text">
           <div class="col s12 m4 center-align">
-            <img src="./Rooma/roma6.jpg" alt="Image description 1" style="border-radius: 50%; width: 200px;">
+            <img src="./Rooma/roma5.jpg" alt="Image description 1" style="border-radius: 50%; width: 200px;">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad unde illo nisi nesciunt repudiandae! Id ab saepe commodi et?</p>
           </div>
     
@@ -963,7 +745,7 @@ span:after {
           </div>
     
           <div class="col s12 m4 center-align">
-            <img src="./Rooma/roma9.jpg" alt="Image description 3" style="border-radius: 50%; width: 200px;">
+            <img src="./Rooma/roma4.jpg" alt="Image description 3" style="border-radius: 50%; width: 200px;">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad unde illo nisi nesciunt repudiandae! Id ab saepe commodi et?</p>
           </div>
         </div>
@@ -1016,101 +798,7 @@ span:after {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-            $('.materialboxed').materialbox();
-            $('.parallax').parallax();
-        });
-    </script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 2500,
-  });
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const cards = document.querySelectorAll('.card');
-        cards.forEach((card, index) => {
-            setTimeout(() => {
-                card.classList.add('visible');
-            }, index * 370); 
-        });
-    });
-
-//OTSIKKKKOO////////
-
-let text = "'Cause I'm the king of Bongo, baby";
-let index = 1; 
-
-
-const typeWriter = setInterval(() => {
-    const element = document.querySelector("h6");
-
-    
-    element.textContent = text[0] + text.slice(1, index);
-
-    index += 1;
-
-    if (index > text.length) {
-        index = 1;  
-    }
-
-}, 200);
-
-
-// STARScodepen//////////////////////
-
-var stars = document.querySelectorAll("span")
-
-var i = stars.length;
-
-while (i--) {
-
-  var delay = (Math.random() * (-2 - 0) + 0).toFixed(1)
-  delay *= Math.floor(Math.random() * 2) == 1 ? 1 : -1
-  
-  // Randomize duration
-  var duration = (Math.random() * (2 - 4) + 4).toFixed(1)
-
-  // Randomize scale
-  var scale = (Math.random() * (0.2 - 1) + 1).toFixed(1)
-
-  // Randomize coordinates
-  var x = (Math.random() * (0 - 30) + 60).toFixed(1)
-  x *= Math.floor(Math.random() * 2) == 1 ? 1 : -1
-  var y = (Math.random() * (0 - 30) + 60).toFixed(1)
-  y *= Math.floor(Math.random() * 2) == 1 ? 1 : -1
-
-  // Set styles
-  stars[i].style.animationDelay = delay + "s"
-  stars[i].style.animationDuration = duration + "s"
-  stars[i].style.transform = 'scale(' + scale + ') translate(' + x + '% ,' + y + '%)'
-}
-
-/////////////STATS///////////////
-document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.modal');
-      M.Modal.init(elems, {});
-    });
-
-///////////////////////HEROEEEEEEEEEEEES/////////////////////
-    function showContent(contentId) {
-   
-      var contents = document.querySelectorAll('.content-box1');
-      contents.forEach(function(content) {
-        content.classList.remove('active');
-      });
-
-
-      var selectedContent = document.getElementById(contentId);
-      selectedContent.classList.add('active');
-    }
-
-    </script>
-
+    <script src="script.js"></script>
     
 </body>
 </html>
