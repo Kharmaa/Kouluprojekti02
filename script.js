@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
+    $('.tabs').tabs();
 });
 
 
@@ -22,7 +23,7 @@ cards.forEach((card, index) => {
 
 //OTSIKKKKOO////////
 
-let text = "'Cause I'm the king of Bongo, baby";
+let text = "'cause I dont Know what to say";
 let index = 1; 
 
 
